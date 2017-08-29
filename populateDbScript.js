@@ -17,7 +17,7 @@ const populate = () => {
   return populatePeople()
     .then(() => {
       console.log('done');
-      mongoose.disconnect()
+      mongoose.disconnect();
     })
     .catch((err) => {
       console.log('ERROR', err);
